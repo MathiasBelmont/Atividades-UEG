@@ -11,10 +11,9 @@ int main() {
 	scanf("%c",&letra);
 	for(i=0; i<strlen(string); i ++) {
 		if(string[i]==letra) {
-			j= i +1;
-			string[i]= string[j];
-			for(j=i+1; j<strlen(string-1); j++) {
-				string[j]= string[j+1];
+			for(j= i;j<strlen(string);j++)
+			{
+				string[j]=string[j+1];
 			}
 		}
 
